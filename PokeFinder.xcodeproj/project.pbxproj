@@ -14,6 +14,7 @@
 		A7349DF31D7FF7FB003BC25B /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = A7349DEC1D7FF7FB003BC25B /* GFGeoHash.m */; };
 		A7349DF41D7FF7FB003BC25B /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A7349DEE1D7FF7FB003BC25B /* GFGeoHashQuery.m */; };
 		A7349DF51D7FF7FB003BC25B /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A7349DF01D7FF7FB003BC25B /* GFQuery.m */; };
+		A7349DFB1D7FFC49003BC25B /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7349DFA1D7FFC49003BC25B /* PokeAnnotation.swift */; };
 		A7AD03601D7FED8E004E1423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD035F1D7FED8E004E1423 /* AppDelegate.swift */; };
 		A7AD03651D7FED8E004E1423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AD03631D7FED8E004E1423 /* Main.storyboard */; };
 		A7AD03671D7FED8E004E1423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AD03661D7FED8E004E1423 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		A7349DEF1D7FF7FB003BC25B /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		A7349DF01D7FF7FB003BC25B /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		A7349DF91D7FF968003BC25B /* PokeFinder-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PokeFinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		A7349DFA1D7FFC49003BC25B /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 		A7AD035C1D7FED8E004E1423 /* PokeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AD035F1D7FED8E004E1423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7AD03641D7FED8E004E1423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 		A7AD03831D7FF517004E1423 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				A7349DFA1D7FFC49003BC25B /* PokeAnnotation.swift */,
 			);
 			name = Modal;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7349DF21D7FF7FB003BC25B /* GFBase32Utils.m in Sources */,
+				A7349DFB1D7FFC49003BC25B /* PokeAnnotation.swift in Sources */,
 				A7AD03601D7FED8E004E1423 /* AppDelegate.swift in Sources */,
 				A7349DF31D7FF7FB003BC25B /* GFGeoHash.m in Sources */,
 				A7AD03801D7FF310004E1423 /* MainVC.swift in Sources */,
