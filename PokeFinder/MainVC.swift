@@ -15,6 +15,7 @@ class MainVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     var mapHasCenteredOnce = false
+    var geoFire: GeoFire!
     
     override func viewDidLoad() {
         super.viewDidLoad()
