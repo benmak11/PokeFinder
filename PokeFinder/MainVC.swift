@@ -19,6 +19,9 @@ class MainVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     var geoFire: GeoFire!                               // GeoFire object
     var geoFireRef: FIRDatabaseReference!
     
+    var mainVC: MainVC!
+    var pokemonVC: PokemonVC!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -152,6 +155,7 @@ class MainVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         let loc = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
         
         let rand = arc4random_uniform(151) + 1
+        //let pickPokemon = UIPresentationController(presentedViewController: mainVC, presenting: pokemonVC)
         createSighting(forLocation: loc, withPokemon: Int(rand))
     }
     

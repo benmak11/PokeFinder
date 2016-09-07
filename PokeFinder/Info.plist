@@ -43,5 +43,9 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location is required to show nearby Pokemon. If you wish not share then app usage is futil!</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>pokemon.ttf</string>
+	</array>
 </dict>
 </plist>

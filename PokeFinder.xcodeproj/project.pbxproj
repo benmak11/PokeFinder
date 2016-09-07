@@ -15,13 +15,16 @@
 		A7349DF41D7FF7FB003BC25B /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A7349DEE1D7FF7FB003BC25B /* GFGeoHashQuery.m */; };
 		A7349DF51D7FF7FB003BC25B /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A7349DF01D7FF7FB003BC25B /* GFQuery.m */; };
 		A7349DFB1D7FFC49003BC25B /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7349DFA1D7FFC49003BC25B /* PokeAnnotation.swift */; };
+		A769328B1D800CC2008A65C7 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A769328A1D800CC2008A65C7 /* pokemon.ttf */; };
+		A769328D1D8010E9008A65C7 /* PokemonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A769328C1D8010E9008A65C7 /* PokemonVC.swift */; };
+		A769328F1D80111F008A65C7 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A769328E1D80111F008A65C7 /* PokeCell.swift */; };
 		A7AD03601D7FED8E004E1423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD035F1D7FED8E004E1423 /* AppDelegate.swift */; };
-		A7AD03651D7FED8E004E1423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AD03631D7FED8E004E1423 /* Main.storyboard */; };
 		A7AD03671D7FED8E004E1423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AD03661D7FED8E004E1423 /* Assets.xcassets */; };
 		A7AD036A1D7FED8E004E1423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AD03681D7FED8E004E1423 /* LaunchScreen.storyboard */; };
 		A7AD03751D7FED8E004E1423 /* PokeFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD03741D7FED8E004E1423 /* PokeFinderTests.swift */; };
 		A7AD03801D7FF310004E1423 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD037F1D7FF310004E1423 /* MainVC.swift */; };
 		A7AD03861D7FF5A8004E1423 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7AD03851D7FF5A8004E1423 /* GoogleService-Info.plist */; };
+		A7C894C71D801C140091A1B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7C894C61D801C140091A1B2 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +61,11 @@
 		A7349DF01D7FF7FB003BC25B /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		A7349DF91D7FF968003BC25B /* PokeFinder-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PokeFinder-Bridging-Header.h"; sourceTree = "<group>"; };
 		A7349DFA1D7FFC49003BC25B /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
+		A769328A1D800CC2008A65C7 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
+		A769328C1D8010E9008A65C7 /* PokemonVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonVC.swift; sourceTree = "<group>"; };
+		A769328E1D80111F008A65C7 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		A7AD035C1D7FED8E004E1423 /* PokeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AD035F1D7FED8E004E1423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7AD03641D7FED8E004E1423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7AD03661D7FED8E004E1423 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7AD03691D7FED8E004E1423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7AD036B1D7FED8E004E1423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +74,7 @@
 		A7AD03761D7FED8E004E1423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7AD037F1D7FF310004E1423 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		A7AD03851D7FF5A8004E1423 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A7C894C61D801C140091A1B2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,7 @@
 				A7AD03811D7FF509004E1423 /* Controller */,
 				A7AD03841D7FF54F004E1423 /* Resources */,
 				A7349DF91D7FF968003BC25B /* PokeFinder-Bridging-Header.h */,
+				A769328A1D800CC2008A65C7 /* pokemon.ttf */,
 			);
 			path = PokeFinder;
 			sourceTree = "<group>";
@@ -187,6 +194,7 @@
 			children = (
 				A7AD037F1D7FF310004E1423 /* MainVC.swift */,
 				A7AD035F1D7FED8E004E1423 /* AppDelegate.swift */,
+				A769328C1D8010E9008A65C7 /* PokemonVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -195,7 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				A7AD03681D7FED8E004E1423 /* LaunchScreen.storyboard */,
-				A7AD03631D7FED8E004E1423 /* Main.storyboard */,
+				A7C894C61D801C140091A1B2 /* Main.storyboard */,
+				A769328E1D80111F008A65C7 /* PokeCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -318,10 +327,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A769328B1D800CC2008A65C7 /* pokemon.ttf in Resources */,
+				A7C894C71D801C140091A1B2 /* Main.storyboard in Resources */,
 				A7AD036A1D7FED8E004E1423 /* LaunchScreen.storyboard in Resources */,
 				A7AD03861D7FF5A8004E1423 /* GoogleService-Info.plist in Resources */,
 				A7AD03671D7FED8E004E1423 /* Assets.xcassets in Resources */,
-				A7AD03651D7FED8E004E1423 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +446,9 @@
 				A7349DFB1D7FFC49003BC25B /* PokeAnnotation.swift in Sources */,
 				A7AD03601D7FED8E004E1423 /* AppDelegate.swift in Sources */,
 				A7349DF31D7FF7FB003BC25B /* GFGeoHash.m in Sources */,
+				A769328F1D80111F008A65C7 /* PokeCell.swift in Sources */,
 				A7AD03801D7FF310004E1423 /* MainVC.swift in Sources */,
+				A769328D1D8010E9008A65C7 /* PokemonVC.swift in Sources */,
 				A7349DF11D7FF7FB003BC25B /* GeoFire.m in Sources */,
 				A7349DF41D7FF7FB003BC25B /* GFGeoHashQuery.m in Sources */,
 				A7349DF51D7FF7FB003BC25B /* GFQuery.m in Sources */,
@@ -462,14 +474,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A7AD03631D7FED8E004E1423 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7AD03641D7FED8E004E1423 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A7AD03681D7FED8E004E1423 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -499,6 +503,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -549,6 +554,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
