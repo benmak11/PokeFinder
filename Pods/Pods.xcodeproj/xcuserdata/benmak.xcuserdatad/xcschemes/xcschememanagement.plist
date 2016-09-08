@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PokeFinder.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -16,17 +21,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>7185BEE362B45A55D250B15468491931</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C81E766C5D3F82A72AB800024562E2C5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

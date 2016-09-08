@@ -1,4 +1,5 @@
 # Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 
 target 'PokeFinder' do
@@ -8,6 +9,9 @@ target 'PokeFinder' do
   # Pods for PokeFinder
   pod 'Firebase'
   pod 'Firebase/Database'
+  pod 'Alamofire',
+    :git => 'https://github.com/Alamofire/Alamofire.git',
+    :branch => 'swift3'
 
   target 'PokeFinderTests' do
     inherit! :search_paths

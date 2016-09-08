@@ -35,15 +35,32 @@
                                     <action selector="spotRandomPokemon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2eh-hO-6qX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3R-9j-aV2">
+                                <color key="backgroundColor" red="0.43859832319999997" green="0.66643049399999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="S4W-Ex-8MK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <state key="normal" title="Show PokemonVC">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dZ4-Hj-t8P" kind="popoverPresentation" popoverAnchorView="s3R-9j-aV2" id="crv-wX-DRK">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="q43-co-TFb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5gB-Gx-nlF"/>
-                            <constraint firstItem="vlF-ql-ojv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7Hs-pJ-YRO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q43-co-TFb" secondAttribute="bottom" constant="10" id="DSg-2U-ect"/>
-                            <constraint firstItem="vlF-ql-ojv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ta9-ZZ-kcN"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vlF-ql-ojv" secondAttribute="bottom" id="YJV-nM-8ue"/>
-                            <constraint firstAttribute="trailing" secondItem="vlF-ql-ojv" secondAttribute="trailing" id="qhA-I7-xuq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s3R-9j-aV2" secondAttribute="bottom" constant="22" id="GRI-6Y-6zy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vlF-ql-ojv" secondAttribute="bottom" id="IjI-SC-Zg2"/>
+                            <constraint firstAttribute="trailing" secondItem="vlF-ql-ojv" secondAttribute="trailing" id="Tcq-tW-nIf"/>
+                            <constraint firstItem="vlF-ql-ojv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WPU-Tb-0ey"/>
+                            <constraint firstItem="s3R-9j-aV2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ZU4-VY-XME"/>
+                            <constraint firstItem="vlF-ql-ojv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fjc-sw-OoH"/>
                         </constraints>
                     </view>
                     <connections>
@@ -160,7 +177,6 @@
                     <connections>
                         <outlet property="collectionView" destination="jbr-lU-ioL" id="AUC-Kf-PBc"/>
                         <outlet property="searchBar" destination="DgK-0t-DAG" id="37A-S0-pw0"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="PokemonDetails" id="oS1-6j-eNM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELB-2l-kol" userLabel="First Responder" sceneMemberID="firstResponder"/>
