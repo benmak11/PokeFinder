@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vlF-ql-ojv">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vlF-ql-ojv">
                                 <frame key="frameInset" width="1000" height="1000"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q43-co-TFb">
@@ -137,7 +137,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jgc-xw-XVa">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jgc-xw-XVa">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="CDG-k4-3HX"/>
                                                         <constraint firstAttribute="width" constant="100" id="phg-rg-uIL"/>
@@ -154,6 +154,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <color key="tintColor" red="0.26274509800000001" green="0.61176470589999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Jgc-xw-XVa" secondAttribute="trailing" id="5sA-I1-uMs"/>
                                             <constraint firstItem="xPd-tE-QEv" firstAttribute="leading" secondItem="56H-ro-IQt" secondAttribute="leading" id="ANc-NC-6TN"/>
@@ -200,7 +201,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="10" width="120" height="120"/>
+        <image name="1" width="120" height="120"/>
         <image name="back" width="100" height="67"/>
         <image name="bg" width="1920" height="1200"/>
         <image name="pokeball" width="97" height="96"/>

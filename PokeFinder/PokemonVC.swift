@@ -13,8 +13,8 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var pokemon = [PokeAnnotation]()
-    var filteredPokemon = [PokeAnnotation]()
+    var pokemon = [Pokemon]()
+    var filteredPokemon = [Pokemon]()
     var inSearchMode = false
     
     override func viewDidLoad() {
@@ -29,15 +29,19 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell {
-            let poke: PokeAnnotation!
             
-            if inSearchMode {
-                poke = filteredPokemon[indexPath.row]
-            } else {
-                poke = pokemon[indexPath.row]
-            }
+            let pokemon = Pokemon(name: "Pokemon", pokeDexId: indexPath.row)
+            cell.configureCell(pokemon: pokemon)
             
-            cell.configureCell(pokemon: poke)
+            //let poke: Pokemon!
+            
+//            if inSearchMode {
+//                poke = filteredPokemon[indexPath.row]
+//            } else {
+//                poke = pokemon[indexPath.row]
+//            }
+//            
+//            cell.configureCell(pokemon: poke)
             return cell
         } else {
         
@@ -47,26 +51,27 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        var poke: PokeAnnotation!
-        
-        if inSearchMode {
-            poke = filteredPokemon[indexPath.row]
-        } else {
-            poke = pokemon[indexPath.row]
-        }
-        
-        print("Pokemon names : \(poke.pokemonName)")
+//        var poke: Pokemon!
+//        
+//        if inSearchMode {
+//            poke = filteredPokemon[indexPath.row]
+//        } else {
+//            poke = pokemon[indexPath.row]
+//        }
+//        
+//        print("Pokemon names : \(poke.name)")
         //performSegue(withIdentifier: "PokemonDetails", sender: poke)
         
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        if inSearchMode {
-            return filteredPokemon.count
-        }
-        
-        return pokemon.count
+//        if inSearchMode {
+//            return filteredPokemon.count
+//        }
+//        
+//        return pokemon.count
+        return 30
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -92,7 +97,7 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
             inSearchMode = true
             let lower = searchBar.text!.lowercased()
             
-            filteredPokemon = pokemon.filter({$0.pokemonName.range(of: lower) != nil})
+            filteredPokemon = pokemon.filter({$0.name.range(of: lower) != nil})
             collectionView.reloadData()
         }
     }
