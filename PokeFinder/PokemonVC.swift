@@ -24,14 +24,38 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         collectionView.dataSource = self
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
+        
+        parsePokemonCSV()
+    }
+    
+    func parsePokemonCSV() {
+        
+        let path = Bundle.main.path(forResource: "pokemon", ofType: "csv")!
+        
+        do {
+            let csv = try CSV(contentsOfURL: path)
+            let rows = csv.rows
+            print(rows)
+            
+            for row in rows {
+                
+                let pokeId = Int(row["id"]!)!
+                let name = row["identifier"]!
+                
+                let poke = Pokemon(name: name, pokeDexId: pokeId)
+                pokemon.append(poke)
+            }
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell {
             
-            let pokemon = Pokemon(name: "Pokemon", pokeDexId: indexPath.row)
-            cell.configureCell(pokemon: pokemon)
+            let poke = pokemon[indexPath.row]
+            cell.configureCell(pokemon: poke)
             
             //let poke: Pokemon!
             
@@ -71,7 +95,7 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
 //        }
 //        
 //        return pokemon.count
-        return 30
+        return pokemon.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
