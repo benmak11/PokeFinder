@@ -97,5 +97,8 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         }
     }
     
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 
 }
