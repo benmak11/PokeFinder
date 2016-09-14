@@ -54,18 +54,17 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell {
             
-            let poke = pokemon[indexPath.row]
+            var poke = pokemon[indexPath.row]
+            //cell.configureCell(pokemon: poke)
+            
+            
+            if inSearchMode {
+                poke = filteredPokemon[indexPath.row]
+            } else {
+                poke = pokemon[indexPath.row]
+            }
+            
             cell.configureCell(pokemon: poke)
-            
-            //let poke: Pokemon!
-            
-//            if inSearchMode {
-//                poke = filteredPokemon[indexPath.row]
-//            } else {
-//                poke = pokemon[indexPath.row]
-//            }
-//            
-//            cell.configureCell(pokemon: poke)
             return cell
         } else {
         
@@ -75,27 +74,27 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-//        var poke: Pokemon!
-//        
-//        if inSearchMode {
-//            poke = filteredPokemon[indexPath.row]
-//        } else {
-//            poke = pokemon[indexPath.row]
-//        }
-//        
-//        print("Pokemon names : \(poke.name)")
+        var poke: Pokemon!
+        
+        if inSearchMode {
+            poke = filteredPokemon[indexPath.row]
+        } else {
+            poke = pokemon[indexPath.row]
+        }
+        
+        print("Pokemon names : \(poke.name)")
         //performSegue(withIdentifier: "PokemonDetails", sender: poke)
         
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-//        if inSearchMode {
-//            return filteredPokemon.count
-//        }
-//        
-//        return pokemon.count
+        if inSearchMode {
+            return filteredPokemon.count
+        }
+        
         return pokemon.count
+        //return pokemon.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
