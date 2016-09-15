@@ -7,7 +7,6 @@ target 'PokeFinder' do
   # Pods for PokeFinder
   pod 'Firebase'
   pod 'Firebase/Database'
-  pod 'Alamofire', '~> 4.0'
 
   target 'PokeFinderTests' do
     inherit! :search_paths
