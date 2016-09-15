@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import FirebaseDatabase
 
-class MainVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class MainVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, PokeIdSentDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -19,8 +19,7 @@ class MainVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     var geoFire: GeoFire!                               // GeoFire object
     var geoFireRef: FIRDatabaseReference!
     
-    var mainVC: MainVC!
-    var pokemonVC: PokemonVC!
+    var pokemon: Pokemon?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -150,13 +149,17 @@ class MainVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         }
     }
     
-    @IBAction func spotRandomPokemon(_ sender: AnyObject) {
-        
+    func userDidTapPokemon(data: Int) {
         let loc = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
-        
-        let rand = arc4random_uniform(151) + 1
-        //let pickPokemon = UIPresentationController(presentedViewController: mainVC, presenting: pokemonVC)
-        createSighting(forLocation: loc, withPokemon: Int(rand))
+         
+         createSighting(forLocation: loc, withPokemon: data)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "presentPokemon" {
+            let pokemonVC: PokemonVC = segue.destination as! PokemonVC
+            pokemonVC.delegate = self
+        }
     }
     
 }

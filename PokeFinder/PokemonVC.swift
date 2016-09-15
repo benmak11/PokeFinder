@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol PokeIdSentDelegate {
+    func userDidTapPokemon(data: Int)
+}
+
 class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
@@ -16,6 +20,8 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     var pokemon = [Pokemon]()
     var filteredPokemon = [Pokemon]()
     var inSearchMode = false
+    
+    var delegate: PokeIdSentDelegate? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,8 +61,6 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell {
             
             var poke = pokemon[indexPath.row]
-            //cell.configureCell(pokemon: poke)
-            
             
             if inSearchMode {
                 poke = filteredPokemon[indexPath.row]
@@ -82,8 +86,11 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
             poke = pokemon[indexPath.row]
         }
         
-        print("Pokemon names : \(poke.name)")
-        //performSegue(withIdentifier: "PokemonDetails", sender: poke)
+        if delegate != nil{
+            let data = poke.pokeDexId
+            delegate?.userDidTapPokemon(data: data)
+            dismiss(animated: true, completion: nil)
+        }
         
     }
     
@@ -94,7 +101,6 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         }
         
         return pokemon.count
-        //return pokemon.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
