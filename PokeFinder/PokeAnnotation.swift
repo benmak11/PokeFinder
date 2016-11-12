@@ -241,7 +241,17 @@ let pokemon = [
      "hariyama",
      "azurill",
      "nosepass",
-     "skitty"]
+     "skitty",
+     "delcatty",
+    "sableye",
+    "mawile",
+     "aron",
+     "lairon",
+     "aggron",
+     "meditite",
+     "medicham",
+     "electrike",
+     "manectric"]
 
 class PokeAnnotation: NSObject, MKAnnotation {
     
