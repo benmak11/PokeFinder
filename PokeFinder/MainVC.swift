@@ -151,8 +151,7 @@ class MainVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, Po
     
     func userDidTapPokemon(data: Int) {
         let loc = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
-         
-         createSighting(forLocation: loc, withPokemon: data)
+        createSighting(forLocation: loc, withPokemon: data)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

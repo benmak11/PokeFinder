@@ -177,7 +177,71 @@ let pokemon = [
     "porygon2",
     "stantler",
     "smeargle",
-    "tyrogue"]
+    "tyrogue",
+    "hitmontop",
+    "smoochum",
+    "elekid",
+    "magby",
+    "miltank",
+    "blissey",
+    "raikou",
+    "entei",
+    "suicune"
+    ,"larvitar"
+    ,"pupitar"
+    ,"tyranitar"
+    ,"lugia"
+    ,"ho-oh"
+    ,"celebi"
+    ,"treecko"
+    ,"grovyle"
+    ,"sceptile"
+    ,"torchic"
+    ,"combusken"
+    ,"blaziken"
+    ,"mudkip",
+     "marshtomp",
+     "swampert",
+     "poochyena",
+     "mightyena",
+     "zigzagoon",
+     "linoone",
+     "wurmple",
+     "silcoon",
+     "beautifly",
+     "cascoon",
+     "dustox",
+     "lotad",
+     "lombre",
+     "ludicolo",
+     "seedot",
+     "nuzleaf",
+     "shiftry",
+     "taillow",
+     "swellow",
+     "wingull",
+     "pelipper",
+     "ralts",
+     "kirlia",
+     "gardevoir",
+     "surskit",
+     "masquerain",
+     "shroomish",
+     "breloom",
+     "slakoth",
+     "vigoroth",
+     "slaking",
+     "nincada",
+     "ninjask",
+     "shedinja",
+     "whismur",
+     "loudred",
+     "exploud",
+     "makuhita",
+     "hariyama",
+     "azurill",
+     "nosepass",
+     "skitty"]
 
 class PokeAnnotation: NSObject, MKAnnotation {
     
