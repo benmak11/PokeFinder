@@ -615,7 +615,10 @@ let pokemon = [
     "ferrothorn",
     "klink",
     "klang",
-    "klinklang"]
+    "klinklang",
+    "tynamo",
+    "eelektrik",
+    "eelektross"]
 
 class PokeAnnotation: NSObject, MKAnnotation {
     
