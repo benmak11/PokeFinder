@@ -34,6 +34,7 @@ class MainVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, Po
     
     override func viewDidAppear(_ animated: Bool) {
         locationAuthStatus()
+        mapView.reloadInputViews()
     }
     
     func locationAuthStatus() {
