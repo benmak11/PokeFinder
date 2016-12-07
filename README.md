@@ -1,9 +1,6 @@
 # PokeFinder
 App extension to Pokemon GO that allows you to find Pokemon within your vicinity!
 
-# Notes to Follow
+# Release Plan
 
-Currently as it stands, this project only works for Pokemon from IDs 1 - 151. Will be working towards getting that fixed in the next couple of commits. Please make sure your picks are below mew :+1: :grinning:
-
-------------------------
-Thank you!
+App is in the final stages of testing and verification. The app is placed to go live in on `December 30th, 2016`. Ciao! :+1: :grinning:
