@@ -1,0 +1,3 @@
+language: objective-c
+xcode_workspace: PokeFinder.xcworkspace
+xcode_scheme: PokeFinder

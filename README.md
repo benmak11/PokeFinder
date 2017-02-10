@@ -1,3 +1,6 @@
+####Master branch build status:
+![](https://travis-ci.org/benmak11/PokeFinder.svg?branch=master)
+
 # PokeFinder
 App extension to Pokemon GO that allows you to find Pokemon within your vicinity!
 
