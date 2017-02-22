@@ -1,3 +1,6 @@
 language: objective-c
 xcode_workspace: PokeFinder.xcworkspace
 xcode_scheme: PokeFinder
+osx_image: xcode8.2
+script:
+  - set -o pipefail && xcodebuild -workspace Diffusion.xcworkspace -scheme Diffusion build test | xcpretty
