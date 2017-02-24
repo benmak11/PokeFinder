@@ -2,5 +2,7 @@ language: objective-c
 xcode_workspace: PokeFinder.xcworkspace
 xcode_scheme: PokeFinder
 osx_image: xcode8.2
+before_install:
+  - xcrun simctl delete 22FA2149-1241-469C-BF6D-462D3837DB72 # See https://github.com/travis-ci/travis-ci/issues/7031
 script:
-  - set -o pipefail && xcodebuild -workspace Diffusion.xcworkspace -scheme Diffusion build test | xcpretty
+  - set -o pipefail && xcodebuild -workspace PokeFinder.xcworkspace -scheme PokeFinder -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2' build | xcpretty
