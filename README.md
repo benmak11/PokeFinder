@@ -1,4 +1,4 @@
-####Master branch build status:
+#### Master branch build status:
 ![](https://travis-ci.org/benmak11/PokeFinder.svg?branch=master)
 
 # PokeFinder
