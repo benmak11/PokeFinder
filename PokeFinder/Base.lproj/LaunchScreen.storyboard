@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -23,10 +26,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="w5D-Mr-DFK"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="w5D-Mr-DFK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Q8-ju-w8w">
+                                <rect key="frame" x="37.5" y="208.5" width="300" height="250"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91f-Aa-36Z">
+                                        <rect key="frame" x="50" y="34" width="200" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="YoR-KF-ulT"/>
                                             <constraint firstAttribute="height" constant="40" id="kgM-Iv-p1j"/>
@@ -35,12 +42,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PokeFinder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Uf-WL-6f1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PokeFinder Ultimate Extreme" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Uf-WL-6f1">
+                                        <rect key="frame" x="20" y="77" width="260" height="173"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="ASV-ic-uxB"/>
-                                            <constraint firstAttribute="width" constant="260" id="Q1u-Sl-pja"/>
+                                            <constraint firstAttribute="width" constant="260" id="K3r-4h-plj"/>
+                                            <constraint firstAttribute="height" constant="173" id="uiJ-DF-qdV"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="50"/>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -49,11 +57,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="2a8-JH-TKB"/>
                                     <constraint firstItem="91f-Aa-36Z" firstAttribute="leading" secondItem="9Q8-ju-w8w" secondAttribute="leading" constant="50" id="50L-Qn-hWH"/>
-                                    <constraint firstItem="7Uf-WL-6f1" firstAttribute="leading" secondItem="9Q8-ju-w8w" secondAttribute="leading" constant="20" id="Ay5-FS-agq"/>
-                                    <constraint firstAttribute="trailing" secondItem="7Uf-WL-6f1" secondAttribute="trailing" constant="20" id="GIe-Mc-bV3"/>
-                                    <constraint firstAttribute="bottom" secondItem="7Uf-WL-6f1" secondAttribute="bottom" constant="90" id="TJE-4n-ZaE"/>
-                                    <constraint firstItem="7Uf-WL-6f1" firstAttribute="top" secondItem="91f-Aa-36Z" secondAttribute="bottom" constant="16" id="VGI-0E-mZ7"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Uf-WL-6f1" secondAttribute="trailing" constant="20" id="71U-Nf-6pT"/>
+                                    <constraint firstItem="7Uf-WL-6f1" firstAttribute="leading" secondItem="9Q8-ju-w8w" secondAttribute="leading" constant="20" id="7Ah-wa-jwY"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Uf-WL-6f1" secondAttribute="bottom" id="9Ct-H2-YZu"/>
                                     <constraint firstItem="91f-Aa-36Z" firstAttribute="top" secondItem="9Q8-ju-w8w" secondAttribute="top" constant="34" id="ZVU-oI-NBx"/>
+                                    <constraint firstItem="7Uf-WL-6f1" firstAttribute="top" secondItem="91f-Aa-36Z" secondAttribute="bottom" constant="3" id="fLF-D9-jJb"/>
                                     <constraint firstAttribute="height" constant="250" id="hqh-Jm-iFq"/>
                                     <constraint firstAttribute="trailing" secondItem="91f-Aa-36Z" secondAttribute="trailing" constant="50" id="yCK-Di-bDX"/>
                                 </constraints>

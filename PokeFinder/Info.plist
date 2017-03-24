@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is required to show nearby Pokemon. If you wish not share then app usage is futil!</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>pokemon.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -40,12 +46,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Location is required to show nearby Pokemon. If you wish not share then app usage is futil!</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>pokemon.ttf</string>
 	</array>
 </dict>
 </plist>
